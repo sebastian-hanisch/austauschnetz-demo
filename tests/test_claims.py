@@ -307,7 +307,7 @@ def test_every_readme_section_the_playbook_asks_for_exists():
     for heading in ("## Kernfrage", "## Befunde und Korrekturen gegenüber dem Plan", "## Modell", "## Methodik", "## Befunde (gemessen, keine Behauptungen)", "## Ehrliche Grenzen", "## Literatur", "## Tests",
                     "## Dateistruktur", "## Bewusst nicht umgesetzt", "## Lokal ausführen", "## Tests ausführen"):
         assert heading in README
-    assert README.rstrip().endswith("[Interaktive Demos](https://sebastianhanisch.net/demos.html).")
+    assert README.rstrip().endswith("[Regeln setzen, verhandeln, kontrollieren](https://sebastianhanisch.net/konzepte-verhandeln.html).")
 
 
 def test_sources_are_marked_as_not_read_in_full():

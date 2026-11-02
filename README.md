@@ -1,7 +1,6 @@
 # Wer hat im Netz Verhandlungsmacht? Das Austauschnetz – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-austauschnetz-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-austauschnetz-demo.streamlit.app/)**
 
 Stück der Linie **regeln-verhandeln** (Arbeitsname; Name, Bereich und Themenfeld werden erst bei der Einbindung in die Website festgelegt) in der „Konzepte“-Reihe für die Website „Sebastian Hanisch – Operations Research und Machine Learning“. Der rote Faden der Linie: wer sich zuerst festlegt, lenkt. Dieses Stück ist der Gegenpol: **festgelegt wird nichts, die Struktur legt fest.** **Verlader und Spediteure** bilden ein **Netz**, eine Kante ist eine mögliche Tour mit einem Überschuss von 1 Euro (Einheitswert, im Modell normiert), jeder Betrieb hat Kapazität für **eine** Tour. Jede Einigung ist zweiseitig, es gibt keine Koalition, keine Regeln, keine private Information und keinen Ablauf: die vielen Beteiligten wirken nur über **Alternativen**, denn was ein Betrieb bei seinem Partner bekommt, hängt davon ab, was der Partner woanders bekäme. Die Demo rechnet, **wer im Netz Verhandlungsmacht hat**, was ein **stabiles** und was ein **ausgewogenes** Ergebnis ist (jedes Tauschpaar teilt den Überschuss über den Alternativen gleich: Nash-Lösung mit Drohpunkt), wann es keines gibt, warum es oft **mehrere** gibt, was der **Kantenausgleich** (eine lokale Dynamik) findet und was nicht, und wie sich das ausgewogene Ergebnis zu Kern, Shapley-Wert und Nukleolus verhält. **Netze, Überschüsse und Auszahlungen sind Modellannahmen, keine Aussagen über echte Betriebe.**
 
@@ -362,4 +361,4 @@ Gebaut mit Streamlit, Plotly, NumPy, SciPy und fpdf2.
 
 ---
 
-Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zu den Demos: [Interaktive Demos](https://sebastianhanisch.net/demos.html).
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Regeln setzen, verhandeln, kontrollieren](https://sebastianhanisch.net/konzepte-verhandeln.html).
