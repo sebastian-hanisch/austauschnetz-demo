@@ -199,7 +199,7 @@ tabs = st.tabs(["1 Wer hat Macht?", "2 Stabil und ausgewogen", "3 Kantenausgleic
 # --- Reiter 1 ------------------------------------------------------------------------------------------------------------------------------------
 with tabs[0]:
     st.subheader("🔬 Experiment E1: Hat Macht mit der Zahl der Verbindungen zu tun?")
-    st.caption("**Erwartung:** Wege zeigen, dass nicht die Zahl der Nachbarn zählt, sondern wer eine Alternative hat, die der Partner nicht hat: auf einem Weg mit 5 Betrieben bekommt die Mitte nichts, obwohl sie zwei Nachbarn hat. "
+    st.caption("**Erwartung:** Wege zeigen, dass die Zahl der Nachbarn Macht nur zum Teil erklärt; es zählt, wer eine Alternative hat, die der Partner nicht hat: auf einem Weg mit 5 Betrieben bekommt die Mitte nichts, obwohl sie zwei Nachbarn hat. "
                "In Zufallsnetzen hängen Auszahlung und Grad dagegen positiv zusammen; die Reihen unten zählen, wie oft der höhere Grad trotzdem weniger bekommt. Live: das Netz der Seitenleiste und Wege mit 2 bis 14 Betrieben.")
     pattern = _pattern()
     table([{"Betriebe": r["n"], "Auszahlungen (exakt)": ", ".join(X.fraction_text(v) for v in r["y"])} for r in pattern])
