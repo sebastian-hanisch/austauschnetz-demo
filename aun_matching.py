@@ -42,7 +42,9 @@ def max_weight_matching(net: Net, edges=None):
         a[u, k] = 1
         a[v, k] = 1
         c[k] = -w
-    res = milp(c, constraints=LinearConstraint(a, -np.inf, 1), integrality=np.ones(m), bounds=Bounds(0, 1))
+    res = milp(c, constraints=LinearConstraint(a, -np.inf, 1), integrality=np.ones(m), bounds=Bounds(0, 1), options={"mip_rel_gap": 0.0})
+    if res.status != 0:
+        raise RuntimeError(f"Matching-MILP nicht gelöst: {res.message}")
     chosen = tuple(es[k] for k in range(m) if res.x[k] > 0.5)
     return sum(w for _, _, w in chosen), chosen
 
